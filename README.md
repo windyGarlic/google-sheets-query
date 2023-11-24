@@ -1,6 +1,9 @@
 # google-sheets-query
 This python program gets data from google sheets pages and outputs as a list.
 
+![image](https://github.com/windyGarlic/google-sheets-query/assets/111098407/35f0861d-c85e-4a11-98c4-45954e4a91b4)
+
+
 
 <h2>Setup</h2>
 
