@@ -8,7 +8,7 @@ To connect to the API you need a file called credentials.json in the same direct
 
 Create a project here: https://developers.google.com/workspace/guides/create-project
 
-Once created, make an oauth2 client ID in the API tab. Save that as credentials.json in the butter directory.
+Once created, make an oauth2 client ID in the API tab. Save that as credentials.json in the same directory as the program.
 
 You will also need to add your spreadsheet ID (The string after '/d/' in the google sheets url) to butter.py image
 ![image](https://github.com/windyGarlic/butter/assets/111098407/c3ad50dc-71f8-43d5-bed3-a770ec470bc3)
