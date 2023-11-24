@@ -12,5 +12,5 @@ Create a project here: https://developers.google.com/workspace/guides/create-pro
 
 Once created, make an oauth2 client ID in the API tab. Save that as credentials.json in the same directory as the program.
 
-You will also need to add your spreadsheet ID (The string after '/d/' in the google sheets url) to butter.py image
+You will also need to add your spreadsheet ID (The string after '/d/' in the google sheets url) to sheetsConnector.py 
 ![image](https://github.com/windyGarlic/butter/assets/111098407/c3ad50dc-71f8-43d5-bed3-a770ec470bc3)
