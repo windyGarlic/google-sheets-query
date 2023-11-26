@@ -3,6 +3,14 @@ This python program gets data from google sheets pages and outputs as a list.<br
 ![image](https://github.com/windyGarlic/google-sheets-query/assets/111098407/a299aa05-6883-4099-8d84-23ac87328448)
 
 * sheet is the name of the specific sheet tab (bottom left). 
+<h2>Install</h2>
+
+```
+git clone https://github.com/windyGarlic/google-sheets-query
+```
+```
+pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
+```
 
 <h2>Setup</h2>
 
