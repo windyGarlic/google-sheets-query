@@ -7,8 +7,7 @@ This python program gets data from google sheets pages and outputs as a list.<br
 
 ```
 git clone https://github.com/windyGarlic/google-sheets-query
-```
-```
+
 pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
 ```
 
