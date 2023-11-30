@@ -1,14 +1,19 @@
-# google-sheets-query
-This python program gets data from google sheets pages and outputs as a list.<br><br>
-![image](https://github.com/windyGarlic/google-sheets-query/assets/111098407/a299aa05-6883-4099-8d84-23ac87328448)
+# google-sheets-to-graph
+This python program gets data from google sheets and creates graphs using matplotlib. It is curently set to use scatter plot graphs, but can be changed.<br><br>
 
-* sheet is the name of the specific sheet tab (bottom left). 
+
+enter valuses into the code e.g:<br>
+![Screenshot from 2023-11-30 13-47-45](https://github.com/windyGarlic/google-sheets-query/assets/111098407/ff768b7b-f729-419e-be86-5578b2cf9073)
+
+<br>
+![Screenshot from 2023-11-30 13-48-23](https://github.com/windyGarlic/google-sheets-query/assets/111098407/7558dca3-31b5-4ddc-abc5-1c6ec79e58ad)
+
 <h2>Install</h2>
 
 ```
 git clone https://github.com/windyGarlic/google-sheets-query
 
-pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
+pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib matplotlib numpy
 ```
 
 <h2>Setup</h2>
