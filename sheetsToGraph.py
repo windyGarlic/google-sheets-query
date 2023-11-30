@@ -16,11 +16,13 @@ xlist_first_index = ""
 xlist_second_index = ""
 ylist_first_index = ""
 ylist_second_index = ""
-    # Label variables
+# Label variables
 title = ""
 xlabel = ""
 ylabel = ""
 
+# Supports bar, scatter, plot
+graph = ""
 
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
@@ -37,29 +39,32 @@ def main():
 
 # Starts sorting data
     try:
-        infosec = get_data(credentials,sheet, xlist_first_index, xlist_second_index)
-        total = get_data(credentials,sheet, ylist_first_index, ylist_second_index)
-        infoseclist = []
-        totalList = []
+        Xaxis = get_data(credentials,sheet, xlist_first_index, xlist_second_index)
+        Yaxis = get_data(credentials,sheet, ylist_first_index, ylist_second_index)
+        Xaxislist = []
+        YaxisList = []
         filteredIS = []
         filteredTE = []
         
-        for innerList in infosec:
+        for innerList in Xaxis:
             try:
-                infoseclist.append(int(innerList[0]))  
+                if graph == 'scatter':
+                    Xaxislist.append(int(innerList[0]))
+                elif graph == 'bar':
+                    Xaxislist.append(innerList[0])
             except:
-                infoseclist.append('0')
-        for innerlist in total:
+                Xaxislist.append('0')
+        for innerlist in Yaxis:
             try:
-                totalList.append(int(innerlist[0]))        
+                YaxisList.append(int(innerlist[0]))        
             except:
-                totalList.append('0')
+                YaxisList.append('0')
 
 # Removes outliers (change as needed)
-        for x,y in zip(infoseclist,totalList):
-            if int(y) <= 20000 and int(x) < 20000:
-                filteredIS.append(x)
-                filteredTE.append(y)
+        for x,y in zip(Xaxislist,YaxisList):
+#            if int(y) <= 20000 and int(x) < 20000:
+            filteredIS.append(x)
+            filteredTE.append(y)
 
 # Set labels and makes graph
         print(filteredIS)
@@ -68,9 +73,13 @@ def main():
         plt.title(title)
         plt.xlabel(xlabel)
         plt.ylabel(ylabel)
-        plt.scatter(filteredIS, filteredTE)
+        if graph == 'scatter':
+            plt.scatter(filteredIS, filteredTE)
+        if graph == 'bar':
+            plt.bar(filteredIS, filteredTE)
+        if graph == 'plot':
+            plt.plot(filteredIS, filteredTE)                    
         plt.show()
-
 
     except HttpError as error:
         print(error)
