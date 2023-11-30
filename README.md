@@ -2,11 +2,13 @@
 This python program gets data from google sheets and creates graphs using matplotlib. It is curently set to use scatter plot graphs, but can be changed.<br><br>
 
 
-enter valuses into the code e.g:<br>
+Enter values into the code e.g:<br>
 ![Screenshot from 2023-11-30 13-47-45](https://github.com/windyGarlic/google-sheets-query/assets/111098407/ff768b7b-f729-419e-be86-5578b2cf9073)
 
 <br>
-![Screenshot from 2023-11-30 13-48-23](https://github.com/windyGarlic/google-sheets-query/assets/111098407/7558dca3-31b5-4ddc-abc5-1c6ec79e58ad)
+
+![Screenshot from 2023-11-30 13-48-23](https://github.com/windyGarlic/google-sheets-query/assets/111098407/486ce4e3-9751-428f-8a67-7c247eba2b84)
+
 
 <h2>Install</h2>
 
