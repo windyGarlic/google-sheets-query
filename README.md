@@ -6,6 +6,7 @@ This python program gets data from google sheets pages and outputs as a list.<br
 - Sheet-To-Graph README.md is in the graph branch <br>
 - sheet is the name of the specific sheet tab (bottom left). 
 <h2>Install</h2>
+
 ```
 git clone https://github.com/windyGarlic/google-sheets-query
 
